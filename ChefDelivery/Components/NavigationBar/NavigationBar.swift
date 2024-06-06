@@ -15,7 +15,6 @@ struct NavigationBar: View {
                 
             }
             .font(.subheadline)
-            .fontWeight(.semibold)
             .foregroundColor(.black)
             Spacer()
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
@@ -27,7 +26,8 @@ struct NavigationBar: View {
     }
 }
 
-#Preview(traits: .sizeThatFitsLayout) {
+#Preview {
     NavigationBar()
+        .previewLayout(.sizeThatFits)
         .padding()
 }

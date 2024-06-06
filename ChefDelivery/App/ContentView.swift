@@ -7,13 +7,19 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            NavigationBar()
+                .padding(.horizontal, 15)
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 20) {
+                    OrderTypeGridView()
+                    CarouselTabView()
+                }
+            }
         }
         .padding()
     }
@@ -21,4 +27,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .previewLayout(.sizeThatFits)
 }
