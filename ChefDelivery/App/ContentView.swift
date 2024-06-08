@@ -10,19 +10,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            NavigationBar()
-                .padding(.horizontal, 15)
-            
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack(spacing: 20) {
-                    OrderTypeGridView()
-                    CarouselTabView()
-                    StoreContainerView()
+        NavigationView {
+            VStack {
+                NavigationBar()
+                    .padding(.horizontal, 15)
+                
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(spacing: 20) {
+                        OrderTypeGridView()
+                        CarouselTabView()
+                        StoreContainerView()
+                    }
                 }
             }
+            .padding()
         }
-        .padding()
     }
 }
 
