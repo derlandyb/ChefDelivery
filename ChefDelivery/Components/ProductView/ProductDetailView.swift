@@ -11,7 +11,13 @@ struct ProductDetailView: View {
     
     var product: ProductType
     
+    var service = HomeService()
+    
     @State private var productQuantity = 1
+    
+    @State private var showAlert = false
+    
+    @State private var alertMessage = ""
     
     var body: some View {
         VStack {
@@ -24,9 +30,37 @@ struct ProductDetailView: View {
             
             Spacer()
             
-            ProductDetailButtonView()
+            ProductDetailButtonView {
+                Task {
+                    await confirmOrder()
+                }
+            }
         }
         .foregroundColor(.black)
+        .alert(isPresented: $showAlert, content: {
+            Alert(title: Text("Atenção"), message: Text(alertMessage), dismissButton: .default(Text("Ok")))
+        })
+    }
+    
+    func confirmOrder() async {
+        do {
+            let result = try await service.confirmOrder(product)
+            
+            switch result {
+            case .success(let message):
+                if let message = message {
+                    alertMessage = message["message"] ?? ""
+                    if !alertMessage.isEmpty {
+                        showAlert = true
+                    }
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        
     }
 }
 
@@ -35,9 +69,14 @@ struct ProductDetailView: View {
 }
 
 struct ProductDetailButtonView: View {
+    
+    var onButtonClick: () -> Void
+    
     var body: some View {
         Button(
-            action: {},
+            action: {
+                onButtonClick()
+            },
             label: {
                 HStack {
                     Image(systemName: "cart")

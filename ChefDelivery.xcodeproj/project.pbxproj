@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59096BB62C17C23C00F57E65 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59096BB52C17C23C00F57E65 /* HomeService.swift */; };
 		590B59012C12152F0055B534 /* ChefDeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B59002C12152F0055B534 /* ChefDeliveryApp.swift */; };
 		590B59032C12152F0055B534 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B59022C12152F0055B534 /* ContentView.swift */; };
 		590B59052C1215300055B534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590B59042C1215300055B534 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59096BB52C17C23C00F57E65 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		590B58FD2C12152F0055B534 /* ChefDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChefDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		590B59002C12152F0055B534 /* ChefDeliveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefDeliveryApp.swift; sourceTree = "<group>"; };
 		590B59022C12152F0055B534 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59096BB42C17C21100F57E65 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				59096BB52C17C23C00F57E65 /* HomeService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		590B58F42C12152F0055B534 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 				590B590F2C122C680055B534 /* App */,
 				590B59132C1248AB0055B534 /* Components */,
 				590B59192C1254890055B534 /* Model */,
+				59096BB42C17C21100F57E65 /* Networking */,
 				590B59042C1215300055B534 /* Assets.xcassets */,
 				590B59062C1215300055B534 /* Preview Content */,
 			);
@@ -321,6 +332,7 @@
 				59566ED32C17350F00016517 /* HomeFeaturedImageView.swift in Sources */,
 				590B59292C127D2F0055B534 /* StoreContainerView.swift in Sources */,
 				59566EC62C151C5F00016517 /* StoreDetailProductItemView.swift in Sources */,
+				59096BB62C17C23C00F57E65 /* HomeService.swift in Sources */,
 				59566ECF2C17266C00016517 /* HomeHeaderView.swift in Sources */,
 				59566EC22C15197700016517 /* StoreDetailHeaderView.swift in Sources */,
 			);
