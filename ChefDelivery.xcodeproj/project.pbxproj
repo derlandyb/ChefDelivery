@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		59096BB62C17C23C00F57E65 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59096BB52C17C23C00F57E65 /* HomeService.swift */; };
 		59096BB92C17E92900F57E65 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 59096BB82C17E92900F57E65 /* Alamofire */; };
+		59096BBE2C17F8AF00F57E65 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59096BBD2C17F8AF00F57E65 /* Launch Screen.storyboard */; };
 		590B59012C12152F0055B534 /* ChefDeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B59002C12152F0055B534 /* ChefDeliveryApp.swift */; };
 		590B59032C12152F0055B534 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B59022C12152F0055B534 /* ContentView.swift */; };
 		590B59052C1215300055B534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590B59042C1215300055B534 /* Assets.xcassets */; };
@@ -41,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		59096BB52C17C23C00F57E65 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		59096BBC2C17F7BB00F57E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		59096BBD2C17F8AF00F57E65 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		590B58FD2C12152F0055B534 /* ChefDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChefDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		590B59002C12152F0055B534 /* ChefDeliveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefDeliveryApp.swift; sourceTree = "<group>"; };
 		590B59022C12152F0055B534 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 		590B58FF2C12152F0055B534 /* ChefDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				59096BBC2C17F7BB00F57E65 /* Info.plist */,
 				59566EBA2C14FFFD00016517 /* Extension */,
 				590B590F2C122C680055B534 /* App */,
 				590B59132C1248AB0055B534 /* Components */,
@@ -118,6 +122,7 @@
 				59096BB42C17C21100F57E65 /* Networking */,
 				590B59042C1215300055B534 /* Assets.xcassets */,
 				590B59062C1215300055B534 /* Preview Content */,
+				59096BBD2C17F8AF00F57E65 /* Launch Screen.storyboard */,
 			);
 			path = ChefDelivery;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59096BBE2C17F8AF00F57E65 /* Launch Screen.storyboard in Resources */,
 				590B59082C1215300055B534 /* Preview Assets.xcassets in Resources */,
 				590B59052C1215300055B534 /* Assets.xcassets in Resources */,
 			);
@@ -478,9 +484,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChefDelivery/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChefDelivery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -507,9 +515,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChefDelivery/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChefDelivery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
